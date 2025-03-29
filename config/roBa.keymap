@@ -40,6 +40,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
