@@ -28,12 +28,12 @@
 
         single_quotation {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
 
         semi_colon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
         };
 
         esc {
