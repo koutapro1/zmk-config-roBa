@@ -46,7 +46,7 @@
         };
 
         toggle_onishi {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <27 28>;
         };
     };
@@ -85,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E               &kp R                       &kp T                                         &kp Y               &kp U              &lt 5 I              &kp O            &kp P
+&kp Q               &kp W           &kp E               &kp R                       &kp T                                         &kp Y               &kp U              &lt 4 I              &kp O            &kp P
 &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F            &kp G        &kp EQUAL      &kp SINGLE_QUOTE  &kp H               &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
 &kp Z               &kp X           &kp C               &kp V                       &kp B        &kp TILDE      &kp SEMICOLON     &kp N               &kp M              &kp COMMA            &kp DOT          &kp SLASH
-&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER       &tap_BS_hold_shift                                                           &kp BACKSLASH
+&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LC(SPACE)  &lt 4 SPACE  &lt 2 TAB      &lt 2 ENTER       &tap_BS_hold_shift                                                           &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -112,17 +112,6 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
@@ -141,12 +130,23 @@
             >;
         };
 
+        ARROW {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
         layer_6 {
             bindings = <
-&kp Q   &kp L   &kp U   &kp COMMA                   &kp PERIOD                                  &kp F               &kp W  &kp R  &kp Y  &kp P
-&kp E   &kp I   &kp A   &kp O                       &kp MINUS      &trans         &kp QUESTION  &kp K               &kp T  &kp N  &kp S  &kp H
-&kp Z   &kp X   &kp C   &kp V                       &kp SEMICOLON  &trans         &trans        &kp G               &kp D  &kp M  &kp J  &kp B
-&trans  &trans  &trans  &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE    &lt 2 TAB      &lt 2 ENTER   &tap_BS_hold_shift                       &trans
+&kp Q   &kp W   &kp F   &kp P                       &kp G                                     &kp J               &kp L  &kp U      &kp Y       &kp SEMICOLON
+&kp A   &kp R   &kp S   &kp T                       &kp D        &trans         &kp QUESTION  &kp H               &kp N  &kp E      &kp I       &kp O
+&kp Z   &kp X   &kp C   &kp V                       &kp B        &trans         &trans        &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&trans  &trans  &trans  &mt LEFT_COMMAND LC(SPACE)  &lt 4 SPACE  &lt 2 TAB      &lt 2 ENTER   &tap_BS_hold_shift                                &trans
             >;
         };
     };
