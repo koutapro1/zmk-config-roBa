@@ -143,10 +143,10 @@
 
         layer_6 {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P                       &kp G                                     &kp J               &kp L  &kp U      &kp Y       &kp SEMICOLON
-&kp A   &kp R   &kp S   &kp T                       &kp D        &trans         &kp QUESTION  &kp H               &kp N  &kp E      &kp I       &kp O
-&kp Z   &kp X   &kp C   &kp V                       &kp B        &trans         &trans        &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&trans  &trans  &trans  &mt LEFT_COMMAND LC(SPACE)  &lt 4 SPACE  &lt 2 TAB      &lt 2 ENTER   &tap_BS_hold_shift                                &trans
+&kp Q   &kp W   &kp F   &kp P                       &kp G                                    &kp J               &kp L  &kp U      &kp Y       &kp SEMICOLON
+&kp A   &kp R   &kp S   &kp T                       &kp D        &kp EQUAL      &kp SQT      &kp H               &kp N  &kp E      &kp I       &kp O
+&kp Z   &kp X   &kp C   &kp V                       &kp B        &kp TILDE      &kp MINUS    &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&trans  &trans  &trans  &mt LEFT_COMMAND LC(SPACE)  &lt 4 SPACE  &lt 2 TAB      &lt 2 ENTER  &tap_BS_hold_shift                                &kp BACKSLASH
             >;
         };
     };
