@@ -45,8 +45,8 @@
             key-positions = <8 9>;
         };
 
-        toggle_onishi {
-            bindings = <&tog 0>;
+        toggle_colemak {
+            bindings = <&tog 6>;
             key-positions = <27 28>;
         };
     };
@@ -86,9 +86,9 @@
         default_layer {
             bindings = <
 &kp Q               &kp W           &kp E               &kp R                       &kp T                                         &kp Y               &kp U              &lt 5 I              &kp O            &kp P
-&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F            &kp G      &kp EQUAL        &kp SINGLE_QUOTE  &kp H               &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
-&kp Z               &kp X           &kp C               &kp V                       &kp B      &kp TILDE        &kp SEMICOLON     &kp N               &kp M              &kp COMMA            &kp DOT          &kp SLASH
-&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LC(SPACE)  &lt 2 TAB  &lt 5 SPACE      &lt 2 ENTER       &tap_BS_hold_shift                                                           &kp BACKSLASH
+&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F            &kp G        &kp EQUAL      &kp SINGLE_QUOTE  &kp H               &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
+&kp Z               &kp X           &kp C               &kp V                       &kp B        &kp TILDE      &kp SEMICOLON     &kp N               &kp M              &kp COMMA            &kp DOT          &kp SLASH
+&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER       &tap_BS_hold_shift                                                           &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -143,10 +143,10 @@
 
         colemak {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P                       &kp G                                    &kp J               &kp L  &lt 5 U    &kp Y       &kp SEMICOLON
-&kp A   &kp R   &kp S   &kp T                       &kp D        &kp EQUAL      &kp SQT      &kp H               &kp N  &kp E      &kp I       &kp O
-&kp Z   &kp X   &kp C   &kp V                       &kp B        &kp TILDE      &kp MINUS    &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&trans  &trans  &trans  &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER  &tap_BS_hold_shift                                &kp BACKSLASH
+&kp Q             &kp W             &kp F         &kp P                       &kp G                                    &kp J               &kp L  &lt 5 U    &kp Y       &kp SEMICOLON
+&kp A             &kp R             &kp S         &kp T                       &kp D        &kp EQUAL      &kp SQT      &kp H               &kp N  &kp E      &kp I       &kp O
+&kp Z             &kp X             &kp C         &kp V                       &kp B        &kp TILDE      &kp MINUS    &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER  &tap_BS_hold_shift                                &kp BACKSLASH
             >;
         };
     };
