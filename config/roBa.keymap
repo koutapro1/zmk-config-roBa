@@ -85,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E               &kp R                       &kp T                                         &kp Y               &kp U              &lt 5 I              &kp O            &kp P
-&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F            &kp G        &kp EQUAL      &kp SINGLE_QUOTE  &kp H               &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
-&kp Z               &kp X           &kp C               &kp V                       &kp B        &kp TILDE      &kp SEMICOLON     &kp N               &kp M              &kp COMMA            &kp DOT          &kp SLASH
-&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER       &tap_BS_hold_shift                                                           &kp BACKSLASH
+&kp Q               &kp W           &kp E               &kp R                   &kp T                                           &kp Y                  &kp U              &lt 5 I              &kp O            &kp P
+&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F        &kp G        &kp EQUAL        &kp SINGLE_QUOTE  &kp H                  &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
+&kp Z               &kp X           &kp C               &kp V                   &kp B        &kp TILDE        &kp SEMICOLON     &kp N                  &kp M              &kp COMMA            &kp DOT          &kp SLASH
+&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &mt LEFT_COMMAND LANG2  &lt 5 SPACE  &lt 5 LANG1      &lt 2 ENTER       &mt RIGHT_SHIFT LANG1                                                           &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -136,7 +136,7 @@
             bindings = <
 &kp NUMBER_1        &kp NUMBER_2              &kp NUMBER_3               &kp NUMBER_4         &kp NUMBER_5                      &kp NUMBER_6           &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &kp NUMBER_0
 &kp LC(LEFT_ARROW)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LC(RIGHT_ARROW)  &trans        &trans      &trans  &trans                 &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)             &kp LC(DOWN_ARROW)         &kp LC(UP_ARROW)     &trans        &trans      &trans  &trans                 &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)             &kp LC(DOWN_ARROW)         &kp LC(UP_ARROW)     &trans        &trans      &trans  &kp BACKSPACE          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
 &trans              &trans                    &trans                     &trans               &trans        &trans      &trans  &mt LEFT_SHIFT DELETE                                                            &trans
             >;
         };
