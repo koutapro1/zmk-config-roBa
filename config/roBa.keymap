@@ -135,8 +135,8 @@
         SCROLL {
             bindings = <
 &kp NUMBER_1        &kp NUMBER_2              &kp NUMBER_3               &kp NUMBER_4         &kp NUMBER_5                      &kp NUMBER_6           &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &kp NUMBER_0
-&kp LC(LEFT_ARROW)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LC(RIGHT_ARROW)  &trans        &trans      &trans  &trans                 &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)             &kp LC(DOWN_ARROW)         &kp LC(UP_ARROW)     &trans        &trans      &trans  &kp BACKSPACE          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
+&kp LC(LEFT_ARROW)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LC(RIGHT_ARROW)  &trans        &trans      &trans  &kp BACKSPACE          &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)             &kp LC(DOWN_ARROW)         &kp LC(UP_ARROW)     &trans        &trans      &trans  &kp DELETE             &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
 &trans              &trans                    &trans                     &trans               &trans        &trans      &trans  &mt LEFT_SHIFT DELETE                                                            &trans
             >;
         };
