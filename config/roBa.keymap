@@ -45,9 +45,19 @@
             key-positions = <8 9>;
         };
 
-        toggle_colemak {
+        toggle_onishi {
             bindings = <&tog 6>;
             key-positions = <27 28>;
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <16 9 40 42>;
+        };
+
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <15 0 34 39>;
         };
     };
 
@@ -141,12 +151,12 @@
             >;
         };
 
-        colemak {
+        onishi {
             bindings = <
-&kp Q             &kp W             &kp F         &kp P                       &kp G                                    &kp J               &kp L  &lt 5 U    &kp Y       &kp SEMICOLON
-&kp A             &kp R             &kp S         &kp T                       &kp D        &kp EQUAL      &kp SQT      &kp H               &kp N  &kp E      &kp I       &kp O
-&kp Z             &kp X             &kp C         &kp V                       &kp B        &kp TILDE      &kp MINUS    &kp K               &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE  &lt 2 TAB      &lt 2 ENTER  &tap_BS_hold_shift                                &kp BACKSLASH
+&kp Q             &kp L             &kp U         &kp COMMA                   &kp PERIOD                                 &kp F               &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I             &kp A         &kp O                       &kp MINUS      &kp EQUAL      &kp SLASH    &kp K               &kp T  &kp N    &kp S  &kp H
+&kp Z             &kp X             &kp C         &kp V                       &kp SEMICOLON  &kp TILDE      &kp MINUS    &kp G               &kp D  &kp M    &kp J  &kp B
+&kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_COMMAND LC(SPACE)  &lt 5 SPACE    &lt 2 TAB      &lt 2 ENTER  &tap_BS_hold_shift                         &kp BACKSLASH
             >;
         };
     };
