@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -59,6 +60,11 @@
             bindings = <&bootloader>;
             key-positions = <15 0 34 39>;
         };
+
+        to_function_layer {
+            bindings = <&mo 1>;
+            key-positions = <0 4>;
+        };
     };
 
     macros {
@@ -106,10 +112,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6        &kp F7        &kp F8        &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans        &trans        &trans        &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                            &kp F12
             >;
         };
 
